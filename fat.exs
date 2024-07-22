@@ -3,7 +3,7 @@ defmodule Fatorial do
     calc_fat(number, number)
   end
 
-  defp calc_fat(number, _) when number == 0, do: 1
+  defp calc_fat(number, _) when number <= 0, do: 1
   defp calc_fat(number, result) when number == 1, do: result
 
   defp calc_fat(number, result) do
